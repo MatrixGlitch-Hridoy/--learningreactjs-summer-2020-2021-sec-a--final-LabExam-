@@ -17,7 +17,7 @@ const Add = () => {
   const onSubmit = async (e)=>{
       e.preventDefault();
       await axios.post("http://localhost:3001/users",user);
-      history.push('/');
+      history.push('/employees/list');
   }
   return (
     <div class="container">

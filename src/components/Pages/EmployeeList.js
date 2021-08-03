@@ -13,7 +13,7 @@ const EmployeeList = () => {
   //   setUsers(result.data.reverse());
   // };
   const loadUser = async (e) => {
-    let result = await fetch(`http://localhost:3001/users/`, {
+    let result = await fetch(`http://127.0.0.1:8000/api/show`, {
         method:'GET'
     });
     result = await result.json();
@@ -25,7 +25,7 @@ const EmployeeList = () => {
   //   loadUser();
   // }
   const deleteUser = async (id) =>{
-    let result = await fetch(`http://localhost:3001/users/${id}`,{
+    let result = await fetch(`http://127.0.0.1:8000/api/delete/${id}`,{
       method:'DELETE'
     });
     result = await result.json();

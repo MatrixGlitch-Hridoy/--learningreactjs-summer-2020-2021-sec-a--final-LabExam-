@@ -24,7 +24,7 @@ const View = () => {
 //   };
 
 const loadUser = async (e) => {
-    let result = await fetch(`http://localhost:3001/users/${id}`,{
+    let result = await fetch(`http://127.0.0.1:8000/api/show/${id}`,{
         method:'GET'
     });
     

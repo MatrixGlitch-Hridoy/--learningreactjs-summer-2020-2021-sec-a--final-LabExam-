@@ -22,7 +22,7 @@ const Register = () => {
         });
         result = await result.json();
         localStorage.setItem("tourist-info",JSON.stringify(result));
-        history.push("/home");
+        history.push("/employees/list");
     }
   return (
     <>

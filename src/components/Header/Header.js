@@ -38,8 +38,8 @@ const Header = () => {
             </ul>
           </div>
           <Link class="btn btn-warning me-2" to="/login">Log In</Link>
-          {/* <Link class="btn btn-success" to="/register">Sign In</Link> */}
-          <Link class="btn btn-success" to="/user/add">Add User</Link>
+          <Link class="btn btn-success" to="/">Register</Link>
+          {/* <Link class="btn btn-success" to="/user/add">Add User</Link> */}
           
         </div>
       </nav>

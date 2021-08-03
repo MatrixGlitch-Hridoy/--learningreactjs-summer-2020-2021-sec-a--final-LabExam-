@@ -20,7 +20,7 @@ function App() {
         {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/login" component={Login}/>
         <Route exact path="/" component={Register}/>
-        <Route exact path="/user/add" component={Add}/>
+        {/* <Route exact path="/user/add" component={Add}/> */}
         <Route exact path="/user/edit/:id" component={Edit}/>
         <Route exact path="/user/:id" component={View}/>
         <Route exact path="/employees/list" component={EmployeeList}/>

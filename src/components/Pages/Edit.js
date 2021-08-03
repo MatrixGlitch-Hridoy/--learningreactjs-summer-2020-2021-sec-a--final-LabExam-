@@ -20,8 +20,8 @@ const Edit = () => {
   }, []);
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:3001/users/${id}`, user);
-    history.push("/");
+    await axios.put(`http://127.0.0.1:8000/api/dashboard-myprofile/${id}?_method=PUT`, user);
+    history.push("/employees/list");
   };
 
 //   const onSubmit = async (e) => {
@@ -39,7 +39,7 @@ const Edit = () => {
 //     setUser(result.data);
 //   };
   const loadUser = async (e) => {
-    let result = await fetch(`http://localhost:3001/users/${id}`,{
+    let result = await fetch(`http://127.0.0.1:8000/api/show/${id}`,{
         method:'GET'
     });
     
